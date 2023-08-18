@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import ListBooks from '../../components/listBooks';
+import ListBooks from '../../components/ListBooks';
 import api from '../../services/api';
+import styles from './styles.module.css';
 
 const Container = styled.div`
   max-width: 960px;
@@ -18,48 +19,54 @@ const ListContainer = styled.div`
 `;
 
 function ListaBooks (){
-      const[books, setBooks] = useState([]);
+  const[books, setBooks] = useState([]);
   const[search, setSearch] = useState('');
 
   useEffect( () => {
-    const url = '/books';
+      const url = '/books';
+      
+      const params = {};
+      if (search) {
+        params.title_like = search
 
-    const params = {};
-    if (search) {
-      params.title_like = search
+        api.get('/books?_embed=books', {params})
+          .then( (response) => {
+            // console.log(response)
+            setBooks(response.data)
+          })
 
-
-      api.get('/books?_embed=books', {params})
-      .then( (response) => {
-        // console.log(response.data)
-        setBooks(response.data)
-      })
-      // console.log('Digitei');
-
-    } else  {
-      // console.log('Não digitei');
-
-      // axios.get('http://localhost:3000/books')
-      api.get(url) 
-      .then( (response) => {
-          // console.log(response.data)
+      } else {
+        
+        api.get(url) // all
+        .then( (response) => {
+          // console.log(response)
           setBooks(response.data)
         })
-    }
-  },[search])
+
+      }
+  },[search]) 
+
 
     return(
-        <Container>
+          <Container>
         <h1>Minhas Lista de Livros</h1>
-        <input type="search" placeholder='Buscar livros - Digite aqui o título do livro' value={search} onChange={(ev) => setSearch(ev.target.value)}/>
+        <input 
+          className={styles.listaSearchInput}
+          type="search" 
+          placeholder='Buscar Livros - Digite aqui o Titulo do Livro'
+          value={search}
+          onChange={(ev) => setSearch(ev.target.value)}
+        />
         <ListContainer>
           {
             books.map(book => {
               return ( <ListBooks 
-                key={book.url} 
+                key={book.id} 
                 books={book}
+                
                   /> )
             })
+
           }
           
         </ListContainer>

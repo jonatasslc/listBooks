@@ -57,7 +57,7 @@ export default function ListBooks({books}) {
     <ItemLink href={books.url} target="_blank">
       <ItemContainer>
         <Thumbnail src={books.image}/>
-        <Title>{books.title}</Title>
+        <Title>{books.title.substring(0,35)}</Title>
         <Price>{books.price}</Price>
         <Button>Comprar</Button>
       </ItemContainer>

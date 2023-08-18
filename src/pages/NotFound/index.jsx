@@ -1,10 +1,10 @@
 import React from 'react';
 
-function NotFound (){
+function NotFound(){
     return(
         <>
-        <h1>404 - Página não encontrada</h1>
-        <h2>A página que voce está procurando não existe...</h2>
+            <h1>404 - Página não encontrada</h1>
+            <h2>A página que você está procurrando não existe...</h2>
         </>
     )
 }

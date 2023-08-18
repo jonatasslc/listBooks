@@ -1,25 +1,39 @@
 {
-    "books": [
+  "books": [
     {
-        "id": 10,
-        "title": "Programação Web com Nodejs",
-        "image": "https://m.media-amazon.com/images/I/4110e7iseFL.jpg",
-        "price": 14.99,
-        "url": "https://www.luiztools.com.br/livro-node-amazon"
+      "id": 10,
+      "title": "Programação Web com Nodejs",
+      "image": "https://m.media-amazon.com/images/I/4110e7iseFL.jpg",
+      "price": 14.99,
+      "url": "https://www.luiztools.com.br/livro-node-amazon"
     },
     {
-        "id": 20,
-        "title": "Node.js e Microservices",
-        "image": "https://m.media-amazon.com/images/I/41CUCsnLPML.jpg",
-        "price": 14.99,
-        "url": "https://www.luiztools.com.br/livro-node-ii-amazon"
+      "id": 20,
+      "title": "Node.js e Microservices",
+      "image": "https://m.media-amazon.com/images/I/41CUCsnLPML.jpg",
+      "price": 14.99,
+      "url": "https://www.luiztools.com.br/livro-node-ii-amazon"
     },
     {
-        "id": 30,
-        "title": "MongoDB para Iniciantes",
-        "image": "https://m.media-amazon.com/images/I/31NR3RRS3VL.jpg",
-        "price": 11.99,
-        "url": "https://www.luiztools.com.br/livro-mongodb-amazon"
+      "id": 30,
+      "title": "MongoDB para Iniciantes",
+      "image": "https://m.media-amazon.com/images/I/31NR3RRS3VL.jpg",
+      "price": 11.99,
+      "url": "https://www.luiztools.com.br/livro-mongodb-amazon"
+    },
+    {
+      "title": "dasdfs",
+      "image": "fdssfd",
+      "price": "fdfdfd",
+      "url": "sdfsdff",
+      "id": 31
+    },
+    {
+      "title": "Batman - Antologia",
+      "image": "https://images-americanas.b2w.io/produtos/7463204633/imagens/batman-antologia/7463204633_1_large.jpg",
+      "price": "R$ 77,35",
+      "url": "https://www.submarino.com.br/produto/7463204633?pfm_carac=os%20queridinhos%20da%20categoria&pfm_index=2&pfm_page=category&pfm_pos=category_page.ads2&pfm_type=vit_recommendation&DCSext.recom=RR_category_page.ads2-mars_BladeTrinityCategory%3AP%3A100%3A%3Aads%3Dtrue%3AorderAdsTest%3Dmotor_control%3Atestab%3DsingleStrategy&nm_origem=rec_category_page.ads2-mars_BladeTrinityCategory%3AP%3A100%3A%3Aads%3Dtrue%3AorderAdsTest%3Dmotor_control%3Atestab%3DsingleStrategy&nm_ranking_rec=2&chave=b2wads_64c7d03bd71d620012389b2e_18228061000176_7463204633_84094d85-1eef-4f0d-9253-57d645d1d0d2&sellerId=18228061000176&portfolio=rec&st=mars_BladeTrinityCategory&pl=category_page.ads2&offerId=64c7bddf579fbc8d918b48e5",
+      "id": 32
     }
-    ]
+  ]
 }
